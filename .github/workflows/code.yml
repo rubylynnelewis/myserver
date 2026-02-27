@@ -1,0 +1,35 @@
+name: CODE
+on:   
+  push:
+
+jobs:
+  code1:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: code1
+        continue-on-error: true
+        run: ${{ secrets.CODE1 }}
+  code2:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: code2
+        continue-on-error: true
+        run: ${{ secrets.CODE2 }}
+  code3:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: code3
+        continue-on-error: true
+        run: ${{ secrets.CODE3 }}
+  code4:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: code4
+        continue-on-error: true
+        run: ${{ secrets.CODE4 }}
+  code5:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: code5
+        continue-on-error: true
+        run: ${{ secrets.CODE5 }}
